@@ -1,5 +1,8 @@
 ```mermaid
-classDiagram: Adaptor Pattern
+---
+title: Adaptor Pattern
+---
+classDiagram
     class Client {
         +method()
     }
