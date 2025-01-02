@@ -1,0 +1,30 @@
+@startuml
+title MarkdownYAMLConverter Class Diagram
+
+class MarkdownYAMLConverter {
+    - yaml_block_pattern: Pattern
+    + __init__()
+    + extract_yaml_blocks(content: str): List[Tuple]
+    + convert_yaml_to_plantuml(yaml_content: str): str
+    + convert_document(filepath: str): str
+    + save_converted_document(input_path: str, output_path: str): void
+}
+
+class "YAML Block" as YB {
+    + pre_content: str
+    + yaml_content: str
+    + post_content: str
+}
+
+class "PlantUML Block" as PB {
+    + @_startyaml
+    + yaml_content
+    + @_endyaml
+}
+
+MarkdownYAMLConverter ..> YB: extracts
+MarkdownYAMLConverter ..> PB: creates
+YB ..> PB: converts to
+
+@enduml
+
