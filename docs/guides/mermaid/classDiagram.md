@@ -1,4 +1,4 @@
-```mermail
+```mermaid
 classDiagram
     class Animal{
         +String name
