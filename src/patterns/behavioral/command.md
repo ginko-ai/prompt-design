@@ -1,5 +1,8 @@
 ```mermaid
-classDiagram 'Command Pattern'
+---
+title: Command Pattern
+---
+classDiagram 
     class WebDriverUtils {
         +add_random_delay()
         +debug_page_state(driver)
