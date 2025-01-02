@@ -1,5 +1,8 @@
 ```mermaid
-classDiagram: Singleton Pattern
+---
+title: Singleton Pattern
+---
+classDiagram 
     class Singleton {
         -instance: Singleton
         -Singleton()
