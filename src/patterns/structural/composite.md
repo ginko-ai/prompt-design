@@ -1,5 +1,8 @@
 ```mermaid
-classDiagram: Composite Pattern
+---
+title: Composite Pattern
+---
+classDiagram
     class Component {
         +operation()
         +add(component)
