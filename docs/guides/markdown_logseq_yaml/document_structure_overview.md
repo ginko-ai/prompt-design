@@ -1,4 +1,3 @@
-
 graph TD
     A[Markdown Document] --> B[Section Headers]
     A --> C[YAML Content]
