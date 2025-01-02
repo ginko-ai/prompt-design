@@ -1,5 +1,8 @@
 ```mermaid
-classDiagram: Observer Pattern
+---
+title: Observer Pattern
+---
+classDiagram 
     class Subject {
         <<interface>>
         -observers: List
