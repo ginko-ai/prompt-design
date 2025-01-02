@@ -1,5 +1,8 @@
 ```mermaid
-classDiagram: Factory Pattern
+---
+title: Factory Pattern
+---
+classDiagram
     class Creator {
         <<abstract>>
         +factoryMethod()
