@@ -1,3 +1,4 @@
+```mermaid
 gitGraph
     commit
     commit
@@ -7,3 +8,4 @@ gitGraph
     checkout main
     merge develop
     commit
+```

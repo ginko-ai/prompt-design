@@ -1,3 +1,4 @@
+```mermail
 classDiagram
     class Animal{
         +String name
@@ -12,3 +13,4 @@ classDiagram
     }
     Animal <|-- Dog
     Animal <|-- Cat
+```

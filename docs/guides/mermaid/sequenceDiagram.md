@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant User
     participant API
@@ -7,3 +8,4 @@ sequenceDiagram
     API->>Database: Query
     Database-->>API: Results
     API-->>User: JSON Response
+```
