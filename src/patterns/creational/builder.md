@@ -1,5 +1,8 @@
 ```mermaid
-classDiagram: Builder Pattern
+---
+title: Builder Pattern
+---
+classDiagram
     class Director {
         +construct()
     }
