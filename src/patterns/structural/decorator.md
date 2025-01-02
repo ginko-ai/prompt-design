@@ -1,5 +1,8 @@
 ```mermaid
-classDiagram: Decorator Pattern
+---
+title: Decorator Pattern
+---
+classDiagram
     class Component {
         <<interface>>
         +operation()
