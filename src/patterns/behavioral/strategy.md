@@ -1,5 +1,8 @@
 ```mermaid
-classDiagram: Strategy Pattern
+---
+title: Strategy Pattern
+---
+classDiagram
     class Context {
         -strategy: Strategy
         +setStrategy(Strategy)
