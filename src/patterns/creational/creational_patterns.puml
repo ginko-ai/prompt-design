@@ -1,5 +1,5 @@
 @startuml
-title classDiagram
+title classDiagram: Creational Patterns
     class CreationalPatterns{
         +Factory Method
         +Abstract Factory
