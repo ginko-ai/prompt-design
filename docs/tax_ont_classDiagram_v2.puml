@@ -1,0 +1,39 @@
+"""
+@startuml
+title classDiagram
+
+    class TaxonomyNode {
+        +name: str
+        +parent: TaxonomyNode
+        +children: List[TaxonomyNode]
+        +add_child(child: TaxonomyNode)
+    }
+
+    class OntologyNode {
+        +name: str
+        +properties: Dict[str, Property]
+        +relationships: Set[Relationship]
+        +rules: List[str]
+        +add_property(prop: Property)
+        +add_relationship(rel_name: str, target: OntologyNode)
+        +add_rule(rule: str)
+    }
+
+    class Property {
+        +name: str
+        +value_type: type
+        +constraints: List[str]
+    }
+
+    class Relationship {
+        +name: str
+        +source: OntologyNode
+        +target: OntologyNode
+    }
+
+    TaxonomyNode "1" --> "0..*" TaxonomyNode : parent/children
+    OntologyNode "1" --> "0..*" Property : has
+    OntologyNode "1" --> "0..*" Relationship : has
+    Relationship "0..*" --> "2" OntologyNode : connects
+@enduml
+"""

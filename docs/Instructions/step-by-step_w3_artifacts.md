@@ -6,7 +6,7 @@ When giving feedback, explain thought process and highlight issues and opportuni
 In addition to explanation, please respond with 3 Artifacts:
 1. Use Artifact for Mermaid diagrams and visualizations
 2. Use Artifacts for suggested python implementation code blocks.
-3. Use Artifacts for the UML tagged (within) python docstrings, include '@startuml' and '@enduml' as per example
+3. Use Artifacts for the UML tagged (within) python docstrings, include '@startuml' and '@enduml' as per example. Place 'title' in front of diagram type (classDiagram)
 
 <example>
 ```mermaid

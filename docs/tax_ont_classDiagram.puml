@@ -1,0 +1,28 @@
+@startuml
+title classDiagram
+    class TaxonomyNode {
+        +String name
+        +List~TaxonomyNode~ children
+        +TaxonomyNode parent
+        +add_child(TaxonomyNode)
+        +get_ancestors() List~String~
+    }
+
+    class OntologyEntity {
+        +String name
+        +List~Relationship~ relationships
+        +Dict properties
+        +add_relationship(String, String, Dict)
+        +add_property(String, String)
+        +get_related_entities(String) Set~String~
+    }
+
+    class Relationship {
+        +String relation_type
+        +String target_entity
+        +Dict properties
+    }
+
+    OntologyEntity --> Relationship : contains
+    TaxonomyNode --> TaxonomyNode : parent/child
+@enduml
