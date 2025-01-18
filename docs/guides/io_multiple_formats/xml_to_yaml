@@ -1,0 +1,96 @@
+@startyaml
+dr:
+  time: "2025-01-13T00:00:00"
+  inter_day:
+    drc:
+      time:
+        ydr: 0.0
+        mdr: 0.0
+        wdr: 0.0
+        ddr: 0.0
+      volume:
+        imbalances:
+          gib: 0.0
+          vib: 0.0
+          dib: 0.0
+      price:
+        upper_wick:
+          dr: 0.0
+          idr: 0.0
+        body:
+          sentiment:
+            long: 0.0
+            short: 0.0
+        lower_wick:
+          dr: 0.0
+          idr: 0.0
+  intra_day:
+    inter_session:
+      model:
+        - uxp
+        - ux
+        - u
+        - rc
+        - rx
+        - d
+        - dx
+        - dxp
+      sequence:
+        profile:
+          trend:
+            - u,ux,uxp
+            - d,dx,dxp
+          range:
+            rc: null
+            rx:
+              type: trumpet
+          vola:
+            incr:
+              - u,ux,uxp
+              - rx
+              - d,dx,dxp
+            decr:
+              - uxp,ux,u
+              - rc
+              - dxp,dx,d
+    session:
+      adr: null
+      odr: null
+      rdr: null
+    event:
+      openingBar:
+        m7candle: null
+      conf:
+        state:
+          - true
+          - false
+        direction:
+          - long
+          - short
+        stats_ret:
+          ret_max:
+            time:
+              date: "2025-01-13"
+            price:
+              sd: count
+              sc: distribution
+              sd: cluster
+              sd: median
+  tools:
+    pinescript: null
+    academy:
+      drlens: null
+      quantX: null
+  process:
+    mental: null
+    backtesting:
+      tags: null
+    forwardtesting:
+      - papertrading
+      - micros
+    scaling: null
+    automation: null
+  pi: 3.14159
+  xmas: true
+  french_hens: 3
+@endyaml
