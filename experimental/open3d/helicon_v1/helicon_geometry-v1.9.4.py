@@ -1,4 +1,4 @@
-# another attempt
+# another attempt, add intersection ids
 import open3d as o3d
 import numpy as np
 from math import pi, cos, sin, sqrt
@@ -75,4 +75,3 @@ def visualize_helicon():
 
 if __name__ == "__main__":
     visualize_helicon()
-    
